@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_focus_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/setting_uninstall"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_uninstall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setting_accelerate"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/setting_uninstall"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_accelerate"
+        app:layout_constraintStart_toEndOf="@+id/setting_uninstall"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setting_clean"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/setting_uninstall"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_clean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_uninstall" />
+
+    <ImageButton
+        android:id="@+id/setting_autorun"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/setting_clean"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/setting_uninstall"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_autorun"
+        app:layout_constraintStart_toEndOf="@+id/setting_clean"
+        app:layout_constraintTop_toBottomOf="@+id/setting_accelerate" />
+
+    <ImageButton
+        android:id="@+id/setting_net"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/setting_clean"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_net"
+        app:layout_constraintStart_toEndOf="@+id/setting_accelerate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setting_more"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@id/setting_net"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_more"
+        app:layout_constraintStart_toEndOf="@+id/setting_autorun"
+        app:layout_constraintTop_toBottomOf="@+id/setting_net" />
+
+    <ImageButton
+        android:id="@+id/setting_net_speed"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/setting_net"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/setting_clean"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_net_speed"
+        app:layout_constraintStart_toEndOf="@+id/setting_net"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setting_update"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/setting_more"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@id/setting_net_speed"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_update"
+        app:layout_constraintStart_toEndOf="@+id/setting_more"
+        app:layout_constraintTop_toBottomOf="@+id/setting_net_speed" />
+
+    <ImageButton
+        android:id="@+id/setting_file"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/setting_net_speed"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@id/setting_clean"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_file"
+        app:layout_constraintStart_toEndOf="@+id/setting_autorun"
+        app:layout_constraintTop_toBottomOf="@+id/setting_more" />
+
+    <ImageButton
+        android:id="@+id/setting_about"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/setting_net_speed"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@id/setting_file"
+        android:background="@drawable/sel_main_focus"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting_about"
+        app:layout_constraintStart_toEndOf="@+id/setting_file"
+        app:layout_constraintTop_toBottomOf="@+id/setting_update" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
