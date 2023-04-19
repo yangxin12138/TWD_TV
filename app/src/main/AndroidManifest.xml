@@ -43,6 +43,7 @@
         <activity android:name="com.twd.myapplication.activity.garbageclear.GarbageClear"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name="com.twd.myapplication.activity.wifi.WifiActivity" />
+        <activity android:name=".activity.setting.AboutMachine" />
     </application>
 
 </manifest>

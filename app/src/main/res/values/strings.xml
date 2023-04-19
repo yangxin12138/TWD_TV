@@ -31,4 +31,9 @@
     <string name="start_eliminate_process">开始清理</string>
     <string name="timing_clear">定时清理</string>
     <string name="stop_timing_clear">停止定时清理</string>
+    <string name="device_name">设备名称</string>
+    <string name="version">版本号</string>
+    <string name="security_patch">安全补丁</string>
+    <string name="kernel">内核版本</string>
+    <string name="runtime">运行时间</string>
 </resources>

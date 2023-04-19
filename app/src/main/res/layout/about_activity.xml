@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="40dp"
+        android:text="设备信息"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--设备名称-->
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/device_name"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/device_name_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <!--版本号-->
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/version"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_name" />
+
+    <TextView
+        android:id="@+id/version_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_name_content" />
+
+    <!--安全补丁-->
+    <TextView
+        android:id="@+id/security_patch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/security_patch"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/version" />
+
+    <TextView
+        android:id="@+id/security_patch_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/version_content" />
+
+    <!--内核版本-->
+    <TextView
+        android:id="@+id/kernel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/kernel"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/security_patch" />
+
+    <TextView
+        android:id="@+id/kernel_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/security_patch_content" />
+
+    <!--运行时间-->
+    <TextView
+        android:id="@+id/runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/runtime"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kernel" />
+
+    <TextView
+        android:id="@+id/runtime_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kernel_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
