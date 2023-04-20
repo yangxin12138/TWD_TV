@@ -94,7 +94,8 @@ public class SettingFragment extends WoDouGameBaseFragment implements View.OnCli
                 startActivity(jumpIntent);
                 break;
             case R.id.setting_about:
-                showShortToast("About");
+                jumpIntent = new Intent(context,AboutMachine.class);
+                startActivity(jumpIntent);
                 break;
             case R.id.setting_more:
                 //跳转到更多设置
