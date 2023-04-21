@@ -1,5 +1,6 @@
 package com.twd.myapplication.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.twd.myapplication.R;
+import com.twd.myapplication.activity.video.MyVideo;
 
 
 public class LocalServiceFragment extends WoDouGameBaseFragment implements View.OnClickListener{
@@ -68,6 +70,7 @@ public class LocalServiceFragment extends WoDouGameBaseFragment implements View.
 
     @Override
     public void onClick(View v) {
+        Intent intent = new Intent();
         switch (v.getId()) {
             case R.id.local_tv:
                 Toast.makeText(getActivity(), "进入TV", Toast.LENGTH_SHORT).show();
@@ -89,6 +92,8 @@ public class LocalServiceFragment extends WoDouGameBaseFragment implements View.
                 break;
             case R.id.local_video:
                 Toast.makeText(getActivity(), "进入本地", Toast.LENGTH_SHORT).show();
+                intent.setClass(getContext(),MyVideo.class);
+                startActivity(intent);
                 break;
         }
     }

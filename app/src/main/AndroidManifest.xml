@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.twd.myapplication">
+    package="com.twd.myapplication"
+    android:usesCleartextTraffic="true"
+    android:hardwareAccelerated="true">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
         tools:ignore="CoarseFineLocation" />
@@ -11,6 +13,10 @@
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -44,6 +50,8 @@
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name="com.twd.myapplication.activity.wifi.WifiActivity" />
         <activity android:name=".activity.setting.AboutMachine" />
+        <activity android:name=".activity.video.MyVideo"/>
+        <activity android:name=".activity.video.PlayActivity"/>
     </application>
 
 </manifest>
